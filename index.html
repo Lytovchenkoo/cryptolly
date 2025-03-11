@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptolly</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/header-nav.partial.html"
+      ></nav>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/header-hero.partial.html"
+      ></section>
+    </header>
+
+    <main class="main">
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/token.partial.html"
+      ></section>
+
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/promo.partial.html"
+      ></section>
+
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/service.partial.html"
+      ></section>
+
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/team.partial.html"
+      ></section>
+
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="partials/modules.partial.html"
+      ></section>
+      <!---->
+      <div class="content-switcher">
+        <aside
+          class="content-switcher__menu"
+          data-hx-get="partials/menu.partial.html"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+        ></aside>
+
+        <section
+          class="content-switcher__content"
+          id="contentArea"
+          data-hx-get="partials/content1.partial.html"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+        ></section>
+        <!---->
+
+        <section
+          class="content-switcher__content"
+          id="contentArea"
+          data-hx-get="partials/plans.partial.html"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+        ></section>
+
+        <section
+          class="content-switcher__content"
+          id="contentArea"
+          data-hx-get="partials/video.partial.html"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+        ></section>
+        <div
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="./partials/modal-window.html"
+        ></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <!-- Footer напишемо пізніше -->
+    </footer>
+  </body>
+</html>

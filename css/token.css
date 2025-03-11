@@ -1,0 +1,81 @@
+.token {
+  padding-top: 100px;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../images/bitcoin.png");
+  background-repeat: no-repeat;
+  background-position: 90% 15%;
+}
+
+.token__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.token__description {
+  color: var(--grey50);
+  width: 55%;
+  margin: 15px auto 40px auto;
+}
+
+.token__image {
+  padding-left: auto;
+}
+
+.token__cards {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.token__content {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: linear-gradient(145deg, #20212e, #25283a, #292e4b);
+  border-radius: 20px;
+  padding: 24px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card__icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  background-size: cover;
+}
+
+.card__icon--profit {
+  background-image: url("../images/profit-icon.svg");
+}
+
+.card__icon--support {
+  background-image: url("../images/support-icon.svg");
+}
+
+.card__icon--confirmation {
+  background-image: url("../images/confirmation-icon.svg");
+}
+
+.card__title {
+  margin-bottom: 10px;
+}
+
+.token__subtitle {
+  color: var(--primery);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card__text {
+  font-size: 14px;
+  color: var(--grey30);
+}
